@@ -62956,18 +62956,18 @@ am(){return new A.aev()}}
 A.aev.prototype={
 aF(){A.j6(B.e8,new A.aWs(this),t.P)
 this.aZ()},
-Bg(){var s=0,r=A.D(t.H),q=this,p,o,n
+Bg(){var s=0,r=A.D(t.H),q=this,p,o,n,m
 var $async$Bg=A.z(function(a,b){if(a===1)return A.A(b,r)
-while(true)switch(s){case 0:n=A.LF()
-n.gpC(n)
+while(true)switch(s){case 0:o=A.LF()
+n=o.gpC(o)
+m=q.c
+m.toString
+m=A.bU(m,!1,t.TF)
 p=q.c
 p.toString
-p=A.bU(p,!1,t.TF)
-o=q.c
-o.toString
 s=2
-return A.v(p.F8(o,"insta.eventhex.ai"),$async$Bg)
-case 2:A.av().$1("Current Domain: insta.eventhex.ai")
+return A.v(m.F8(p,n),$async$Bg)
+case 2:A.av().$1("Current Domain: "+n)
 q.fk(0)
 return A.B(null,r)}})
 return A.C($async$Bg,r)},
