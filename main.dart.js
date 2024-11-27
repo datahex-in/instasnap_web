@@ -60882,7 +60882,7 @@ A.au().$1("44444------------")
 n=A.bU(a0,!1,t.Zw)
 n.rm(a0)
 A.au().$1("login userId----------------------: "+$.b5m)
-A.au().$1("login eventId----------------------: "+$.mH)
+A.au().$1("login eventId----------------------: 1"+$.mH)
 A.au().$1("login token----------------------: "+$.Dx)
 A.au().$1("login ticketRegistrationId----------------------: "+$.xT)
 s=9
