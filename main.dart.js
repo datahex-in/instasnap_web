@@ -63102,18 +63102,18 @@ am(){return new A.aeq()}}
 A.aeq.prototype={
 aF(){A.iq(B.dw,new A.aWj(this),t.P)
 this.aZ()},
-Bf(){var s=0,r=A.D(t.H),q=this,p,o,n
+Bf(){var s=0,r=A.D(t.H),q=this,p,o,n,m
 var $async$Bf=A.x(function(a,b){if(a===1)return A.A(b,r)
-while(true)switch(s){case 0:n=A.LF()
-n.gpC(n)
+while(true)switch(s){case 0:o=A.LF()
+n=o.gpC(o)
+m=q.c
+m.toString
+m=A.bM(m,!1,t.TF)
 p=q.c
 p.toString
-p=A.bM(p,!1,t.TF)
-o=q.c
-o.toString
 s=2
-return A.u(p.Fa(o,"insta.eventhex.ai"),$async$Bf)
-case 2:A.ak().$1("Current Domain: insta.eventhex.ai")
+return A.u(m.Fa(p,n),$async$Bf)
+case 2:A.ak().$1("Current Domain: "+n)
 q.fk(0)
 return A.B(null,r)}})
 return A.C($async$Bf,r)},
