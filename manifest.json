@@ -1,6 +1,6 @@
 {
-    "name": "Eventx selfie",
-    "short_name": "Eventx selfie",
+    "name": "EventHex Instasnap",
+    "short_name": "EventHex Instasnap",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#ffffff",
