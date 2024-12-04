@@ -61318,18 +61318,18 @@ an(){return new A.adb()}}
 A.adb.prototype={
 aI(){A.hr(B.du,new A.aU1(this),t.P)
 this.aY()},
-AQ(){var s=0,r=A.G(t.H),q=this,p,o,n
+AQ(){var s=0,r=A.G(t.H),q=this,p,o,n,m
 var $async$AQ=A.C(function(a,b){if(a===1)return A.D(b,r)
-while(true)switch(s){case 0:n=A.KW()
-n.gpr(n)
+while(true)switch(s){case 0:o=A.KW()
+n=o.gpr(o)
+m=q.c
+m.toString
+m=A.bp(m,!1,t.TF)
 p=q.c
 p.toString
-p=A.bp(p,!1,t.TF)
-o=q.c
-o.toString
 s=2
-return A.y(p.z_(o,"photos-members-conference.siokerala.org"),$async$AQ)
-case 2:A.ae().$1("Current Domain: photos-members-conference.siokerala.org")
+return A.y(m.z_(p,n),$async$AQ)
+case 2:A.ae().$1("Current Domain: "+n)
 q.ho(0)
 return A.E(null,r)}})
 return A.F($async$AQ,r)},
