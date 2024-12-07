@@ -61209,7 +61209,7 @@ if(B.d.c3(r,"http")||B.d.c3(r,"https"))return A.bmE(this.aCa(r),new A.azU(c),B.b
 return A.aX(s,B.Z1,B.m,B.cE,s,s,s,114,s,s,s,s,c.a/3.5)},
 aCa(a){var s,r="identifyEventHighlights url "
 A.ad().$1(r)
-if(B.d.t(a,"eventhighlight")){s=u.j+a
+if(B.d.t(a,"eventhighlight")){s=!B.d.t(a,"amazonaws.com")?u.j+a:""
 A.ad().$1(r+s)}else s=a
 return s}}
 A.azW.prototype={
@@ -61344,22 +61344,22 @@ an(){return new A.adc()}}
 A.adc.prototype={
 aI(){A.hr(B.du,new A.aU5(this),t.P)
 this.aY()},
-AQ(){var s=0,r=A.G(t.H),q=this,p,o,n
+AQ(){var s=0,r=A.G(t.H),q=this,p,o,n,m
 var $async$AQ=A.C(function(a,b){if(a===1)return A.D(b,r)
-while(true)switch(s){case 0:n=A.KX()
-n.gpr(n)
+while(true)switch(s){case 0:o=A.KX()
+n=o.gpr(o)
+m=q.c
+m.toString
+m=A.bp(m,!1,t.TF)
 p=q.c
 p.toString
-p=A.bp(p,!1,t.TF)
-o=q.c
-o.toString
 s=2
-return A.y(p.z_(o,"gulftradeexpo.eventhex.ai"),$async$AQ)
-case 2:A.ad().$1("Current Domain: gulftradeexpo.eventhex.ai")
+return A.y(m.z_(p,n),$async$AQ)
+case 2:A.ad().$1("Current Domain: "+n)
 if($.i6.length!==0)q.ho(0)
-else{p=q.c
-p.toString
-A.eM("No Event Found",p)}return A.E(null,r)}})
+else{m=q.c
+m.toString
+A.eM("No Event Found",m)}return A.E(null,r)}})
 return A.F($async$AQ,r)},
 ho(a){var s=0,r=A.G(t.z),q=1,p,o=this,n,m,l,k,j,i,h,g,f,e,d,c
 var $async$ho=A.C(function(a0,a1){if(a0===1){p=a1
