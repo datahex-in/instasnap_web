@@ -34,12 +34,63 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "454798629";
+    const serviceWorkerVersion = "2033909866";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
 <body>
+
+<!-- QR Scanner -->
+<!-- Add jsQR library -->
+<script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
+<script>
+  let currentVideoElement = null; // Store the video element globally for cleanup
+
+  function startQRScanner(videoElement, onScanCallback) {
+    currentVideoElement = videoElement; // Store the reference
+    // Set up canvas for QR code decoding
+    const canvas = document.createElement('canvas');
+    const context = canvas.getContext('2d');
+
+    function scanFrame() {
+      if (!videoElement.srcObject) {
+        console.error('No video stream found');
+        return;
+      }
+
+      // Draw the video frame on the canvas
+      canvas.width = videoElement.videoWidth;
+      canvas.height = videoElement.videoHeight;
+      context.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
+
+      // Extract image data for QR code scanning
+      const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+      const code = jsQR(imageData.data, canvas.width, canvas.height);
+
+      if (code) {
+        console.log('QR Code detected:', code.data);
+        onScanCallback(code.data); // Call the Dart callback with the QR code data
+      } else {
+        requestAnimationFrame(scanFrame); // Continue scanning
+      }
+    }
+
+    scanFrame(); // Start scanning loop
+  }
+
+  function stopQRScanner() {
+    if (currentVideoElement && currentVideoElement.srcObject) {
+      const tracks = currentVideoElement.srcObject.getTracks();
+      tracks.forEach(track => track.stop());
+      currentVideoElement.srcObject = null;
+      currentVideoElement = null; // Reset reference
+    }
+    console.log('QR Scanner stopped');
+  }
+</script>
+<!-- QR Scanner End -->
+
 <script>
   window.addEventListener('load', function(ev) {
     _flutter.loader.loadEntrypoint({
