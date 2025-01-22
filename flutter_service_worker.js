@@ -3,12 +3,11 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"Insta%20snap%20web.zip": "508a6e81f20094ee2cdb4b97089f4cbf",
-"flutter_bootstrap.js": "b06a2e0f242267061aa0e9e993ee9539",
+const RESOURCES = {"flutter_bootstrap.js": "6ba1a5aaf58bc247b83732007519ce5f",
 "version.json": "f94c22b7d87be6e4a377502049357fb7",
-"index.html": "16cde2e0ee97221f66dbb19b04c9f1bf",
-"/": "16cde2e0ee97221f66dbb19b04c9f1bf",
-"main.dart.js": "fa237dd204f59772e63127496a77c8e0",
+"index.html": "a5ffbc98e08f7a3b09721dc3829cafbc",
+"/": "a5ffbc98e08f7a3b09721dc3829cafbc",
+"main.dart.js": "6e3ccbfd1aada4d11115cd51e444742a",
 "flutter.js": "f393d3c16b631f36852323de8e583132",
 "favicon.png": "3b3be406b3256083fea30a1c45296c7d",
 "icons/Icon-192.png": "ce9c1de182383a835b442a6162bc4822",
